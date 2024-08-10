@@ -27,22 +27,33 @@
                 </a>
               </div>
 
-              <a href="/zyre_web/products">
+              <a href="./product.html">
                 <li class="list txt left">Products</li>
               </a>
-              <a href="/zyre_web/solutions">
+              <a href="./solutions.html">
                 <li class="list txt left">Solutions</li>
               </a>
             </ul>
           </div>
           <div>
-            <button variant="outline" onClick="{scrollToBottom}">
+            <button
+              variant="outline"
+              onClick="{scrollToBottom}"
+              style="
+                padding: 0.5rem;
+                background: none;
+                border-radius: 5px;
+                border: 0;
+                background-color: white;
+                color: black;
+                font-weight: 500;
+              "
+            >
               Contact Us
             </button>
           </div>
         </div>
       </div>
-      {/* Nav-End */} {/* Home-Start */}
       <div class="home_I">
         <img src="./public/home.svg" alt="" class="huge_img" />
         <div class="text_cont">
@@ -50,51 +61,67 @@
         </div>
       </div>
 
-      {/* Home-End */} {/* Image slide */}
       <div class="home_II" data-aos="fade-up" data-aos-duration="1000">
-        <GoChevronLeft
-          class="text-white self-center text-4xl"
-          onClick="{Sub_Props}"
-        />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+          style="color: white; width: 24px"
+          id="subProps"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+
         <div class="slide">
           <div class="img_slide">
             <a
               href="products
              "
             >
-              <img src="./public/2switch_new.png" alt="" class="huge_img_II" />
+              <img
+                src="./public/2switch_new.png"
+                alt=""
+                class="huge_img_II"
+                id="cimg"
+              />
             </a>
 
             <div class="duration-all">
-              <p class="text-white text-2xl pb-[.3rem] font-zyre">
-                {switches[i]}
+              <p class="text-white text-2x" style="color: white" id="switches">
+                8 Switches
               </p>
               <div class="flex gap-[1rem]">
-                <p
-                  class="border-[2px] border-white rounded-md text-white border-solid inline-block px-[4px] py-[2px] text-xs font-zyre"
-                >
-                  {color[i]}
-                </p>
-                <p
-                  class="border-[2px] border-white rounded-md text-white border-solid inline-block px-[4px] py-[2px] text-xs font-zyre"
-                >
-                  {connect}
-                </p>
-                <p
-                  class="border-[2px] border-white rounded-md text-white border-solid inline-block px-[4px] py-[2px] text-xs font-zyre"
-                >
-                  {voice}
-                </p>
+                <p class="tag" id="color">White</p>
+                <p class="tag">Wi-Fi</p>
+                <p class="tag">Google,Siri</p>
               </div>
             </div>
           </div>
         </div>
-        <GoChevronRight
-          class="text-white self-center text-4xl"
-          onClick="{Change_Props}"
-        />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+          style="color: white; width: 24px"
+          id="changeProps"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
       </div>
-      {/* Image slide */} {/* About Zyre */}
 
       <div class="home_III" data-aos="fade-up" data-aos-duration="1000">
         <span class="title_txt"> About ZYRE </span>
@@ -105,16 +132,13 @@
           controls, Zyre redefines modern living through innovation and
           connectivity.
         </p>
-        <button variant="outline" class="hover:shadow-md font-zyre">
-          Learn more
-        </button>
+        <button variant="outline" class="hov">Learn more</button>
       </div>
       <!-- {/* About Zyre */} {/* Video */} -->
       <div class="home_IV" data-aos="fade-up" data-aos-duration="1000">
         <p class="title_txt">Demo Video</p>
         <video src="./public/zyre_demo.mp4" class="vid" controls></video>
       </div>
-      {/* Video */} {/* Solutions */}
       <div class="sols" data-aos="fade-up" data-aos-duration="1000">
         <span class="title_txt"> Solutions </span>
         <img src="./public/line.svg" alt="" style="width: 85%" />
@@ -122,93 +146,71 @@
           <div class="sol_I_I">
             <section class="sol_I_I_I">
               <div style="display: flex">
-                <p
-                  style="
-                    color: white;
-                    font-size: x-large;
-                    font-family: font-zyre;
-                  "
-                >
-                  Home Automation
-                </p>
+                <p style="color: white; font-size: x-large">Home Automation</p>
               </div>
               <ul class="sol_I_IV">
-                <li class="text-[#ffffff99] font-zyre">Light control</li>
-                <li class="text-[#ffffff99] font-zyre">HVAC control</li>
-                <li class="text-[#ffffff99] font-zyre">Voice control</li>
-                <li class="text-[#ffffff99] font-zyre">Mobile Connectivity</li>
-                <li class="text-[#ffffff99] font-zyre">Kitchen Appliances</li>
+                <li class="lst_txt">Light control</li>
+                <li class="lst_txt">HVAC control</li>
+                <li class="lst_txt">Voice control</li>
+                <li class="lst_txt">Mobile Connectivity</li>
+                <li class="lst_txt">Kitchen Appliances</li>
               </ul>
             </section>
             <section class="sol_I_I_I">
               <div style="display: flex">
-                <p class="text-white text-xl font-zyre">Security Systems</p>
+                <p style="color: white; font-size: x-large">Security Systems</p>
               </div>
               <ul class="sol_I_IV">
-                <li class="text-[#ffffff99] font-zyre">Smart Cameras</li>
-                <li class="text-[#ffffff99] font-zyre">Door Locks</li>
-                <li class="text-[#ffffff99] font-zyre">Motion Sensors</li>
-                <li class="text-[#ffffff99] font-zyre">Alarm Systems</li>
+                <li class="lst_txt">Smart Cameras</li>
+                <li class="lst_txt">Door Locks</li>
+                <li class="lst_txt">Motion Sensors</li>
+                <li class="lst_txt">Alarm Systems</li>
               </ul>
             </section>
           </div>
           <img src="./public/line.svg" alt="" style="width: 95%" />
           <section class="sol_I_I_I">
             <div>
-              <p class="text-white text-xl font-zyre">Stores and Malls</p>
+              <p style="color: white; font-size: x-large">Stores and Malls</p>
             </div>
             <ul class="sol_I_IV">
-              <li class="text-[#ffffff99] font-zyre">AV control</li>
-              <li class="text-[#ffffff99] font-zyre">
-                Automation and Scheduling
-              </li>
-              <li class="text-[#ffffff99] font-zyre">Speed control</li>
+              <li class="lst_txt">AV control</li>
+              <li class="lst_txt">Automation and Scheduling</li>
+              <li class="lst_txt">Speed control</li>
             </ul>
           </section>
           <img src="./public/line.svg" alt="" style="width: 95%" />
           <section class="sol_I_I_I">
             <div>
-              <p class="text-white text-xl font-zyre">Industries</p>
+              <p style="color: white; font-size: x-large">Industries</p>
             </div>
             <ul class="sol_I_IV">
-              <li class="text-[#ffffff99] font-zyre">Motors</li>
-              <li class="text-[#ffffff99] font-zyre">HVAC control</li>
-              <li class="text-[#ffffff99] font-zyre">Dryers</li>
+              <li class="lst_txt">Motors</li>
+              <li class="lst_txt">HVAC control</li>
+              <li class="lst_txt">Dryers</li>
             </ul>
           </section>
           <img src="./public/line.svg" alt="" style="width: 95%" />
         </div>
       </div>
-      <div
-        class="sol_V"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        <p
-          class="title_txt"
-        >
-          Customer Feedback
-        </p>
+      <div class="sol_V" data-aos="fade-up" data-aos-duration="1000">
+        <p class="title_txt">Customer Feedback</p>
         <div class="sol_V_II">
-          <div
-            class="sol_V_I"
-          >
-            <p class="leading-[2rem] text-sm text-justify">
+          <div class="sol_V_I">
+            <p class="feed_para">
               Upon acquiring the Zyre Automation Kit, my professional routine
               transformed into a highly efficient operation. This innovative
               technology allows me to seamlessly control my devices throughout
               the workspace, significantly enhancing convenience, optimizing
               time management, and reducing energy consumption costs.
             </p>
-            <div class="pb-[1rem] flex flex-col items-center">
-              <p class="text-2xl">Mr.Saravanan</p>
-              <span class="text-xs text-[#ffffff99]">Shop Owner</span>
+            <div class="name_col">
+              <p style="font-size: x-large">Mr.Saravanan</p>
+              <span class="desig">Shop Owner</span>
             </div>
           </div>
-          <div
-            class="sol_V_I"
-          >
-            <p class="leading-[2rem] text-sm">
+          <div class="sol_V_I">
+            <p class="feed_para">
               I had the Zyre Home Automation Kit installed, and it was a
               seamless process handled by professional technicians. The pricing
               is reasonable, offering great value for the features provided.
@@ -217,15 +219,13 @@
               scheduling. Overall, it is a fantastic addition, making my home
               smarter and my daily routine more convenient.
             </p>
-            <div class="pb-[1rem] flex flex-col items-center">
-              <p class="text-2xl">Mr.Rajesh</p>
-              <span class="text-xs text-[#ffffff99]">House Owner</span>
+            <div class="name_col">
+              <p style="font-size: x-large">Mr.Rajesh</p>
+              <span class="desig">House Owner</span>
             </div>
           </div>
-          <div
-            class="sol_V_I"
-          >
-            <p class="leading-[2rem] text-sm">
+          <div class="sol_V_I">
+            <p class="feed_para">
               We installed the Zyre Home Automation Kit in our office. The
               installation was quick and professional. The system is reasonably
               priced and offers excellent value. It has significantly improved
@@ -235,70 +235,245 @@
               recommended for any business looking to enhance productivity and
               management.
             </p>
-            <div class="pb-[1rem] flex flex-col items-center">
-              <p class="text-2xl">Mr.Sidharth</p>
-              <span class="text-xs text-[#ffffff99]">
-                Small scale Industrialist
-              </span>
+            <div class="name_col">
+              <p style="font-size: x-large">Mr.Sidharth</p>
+              <span class="desig"> Small scale Industrialist </span>
             </div>
           </div>
         </div>
       </div>
-      {/* Customer FeedBack */}
 
       <div ref="{bottomRef}">
-        {/* Feedback */}
-        <div
-          class="h-screen px-[4rem] mt-[20rem]"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          {/* Image */}
-          <div class="flex gap-[20rem]">
+        <div class="sol_VI" data-aos="fade-up" data-aos-duration="1000">
+          <div style="display: flex; gap: 20rem">
             <div>
-              <p
-                class="text-center font-bold text-[4rem] pb-[2rem] bg-gradient-to-b from-[#B59410] to-[#3F3001] inline-block text-transparent bg-clip-text font-zyre"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
+              <p class="title_txt" data-aos="fade-up" data-aos-duration="1000">
                 For Enquiry
               </p>
-              <div class="flex flex-col gap-[2rem]">
-                <p class="text-white">
-                  Send a mail to{" "}
+              <div style="display: flex; flex-direction: column; gap: 2rem">
+                <p class="text-white" style="color: white">
+                  Send a mail to
                   <span class="text-[#ffffff99] underline">
                     zyrehomeautomations@gmail.com
                   </span>
                 </p>
-                <p class="text-white">
-                  Call{" "}
-                  <span class="text-[#ffffff99] underline"> +918525928155 </span
-                  >{" "} for more details{" "}
+                <p class="text-white" style="color: white">
+                  Call
+                  <span
+                    class="text-[#ffffff99] underline"
+                    style="color: #ffffff99; text-decoration: underline"
+                  >
+                    +918525928155
+                  </span>
+                  for more details
                 </p>
               </div>
             </div>
-            {/* Image */} {/* Inputs */}
-            <div class="flex flex-col gap-[2rem] pt-[2rem]">
-              <section class="flex gap-[1rem]">
-                <input type="text" placeholder="Name" class="w-[300px]" />
-                <input type="email" placeholder="Email" class="w-[300px]" />
+            <div class="feedbck">
+              <section style="display: flex; gap: 1rem">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  style="width: 300px; padding: 0.5rem; border-radius: 5px"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  style="width: 300px; padding: 0.5rem; border-radius: 5px"
+                />
               </section>
-              <section class="flex gap-[1rem]">
-                <input type="tel" placeholder="Telephone" class="w-[300px]" />
-                <input type="text" placeholder="City" class="w-[300px]" />
+              <section style="display: flex; gap: 1rem">
+                <input
+                  type="tel"
+                  placeholder="Telephone"
+                  style="width: 300px; padding: 0.5rem; border-radius: 5px"
+                />
+                <input
+                  type="text"
+                  placeholder="City"
+                  style="width: 300px; padding: 0.5rem; border-radius: 5px"
+                />
               </section>
-              <textarea placeholder="Address" />
-              <button type="submit" variant="outline" class="w-fit flex">
+              <textarea
+                id="myTextarea"
+                rows="4"
+                cols="50"
+                placeholder="Type your text here..."
+              ></textarea>
+              <button
+                type="submit"
+                variant="outline"
+                class="w-fit flex"
+                style="
+                  background: none;
+                  border-radius: 5px;
+                  border: 0;
+                  background-color: white;
+                  color: black;
+                  font-weight: 500;
+                  width: fit-content;
+                  padding: 0.5rem 1rem;
+                "
+              >
                 Submit
               </button>
             </div>
           </div>
-          {/* Inputs */}
+          <!-- {/* Inputs */} -->
         </div>
       </div>
-      {/* Feedback */} {/* Footer */}
-      <footer />
-      {/* Footer */}
+      <!-- {/* Feedback */}
+        {/* Footer */} -->
+      <div>
+        <div class="footer" data-aos="fade-up" data-aos-duration="10000">
+          <!-- One -->
+          <section class="footer_I">
+            <section class="feedbck">
+              <div>
+                <img src="./public/new_logo.png" alt="" />
+              </div>
+              <div class="feedbck_I">
+                <span class="feedbck_title">Follow us on</span>
+                <div class="flex gap-[.4rem]">
+                  <i style="font-size: x-large; color: #ffffff99"></i>
+                  <i style="font-size: x-large; color: #ffffff99"></i>
+                  <i style="font-size: x-large; color: #ffffff99"></i>
+                  <i style="font-size: x-large; color: #ffffff99"></i>
+                </div>
+              </div>
+              <div>
+                <p class="feedbck_title">Address</p>
+                <p class="text" style="color: #ffffff99">
+                  NO 1,Vijaya nagar,Mgr Salai,<br />
+                  Neyveli,Cuddalore.
+                </p>
+              </div>
+            </section>
+            <!-- Two -->
+            <section class="footer_II">
+              <div>
+                <p class="feedbck_title">Quick Links</p>
+                <ul class="sol_I_IV">
+                  <li class="feedbck_lnk">
+                    <a href="/" style="color: white;">Home</a>
+                  </li>
+                  <li class="feedbck_lnk">Company</li>
+                  <li class="feedbck_lnk">
+                    <a href="./solutions.html" style="color: white;">Products</a>
+                  </li>
+                  <li class="feedbck_lnk">Contact</li>
+                </ul>
+              </div>
+              <div style="display: flex; flex-direction: column">
+                <span class="feedbck_title">E-mail </span>
+                <span style="color: #ffffff99">
+                  zyrehomeautomation@gmail.com
+                </span>
+              </div>
+              <div style="display: flex; flex-direction: column">
+                <span class="feedbck_title">Phone Number</span>
+                <span style="color: #ffffff99">+91 8525928155</span>
+              </div>
+            </section>
+            <!-- Three -->
+            <section class="footer_II">
+              <div>
+                <span class="feedbck_title">Home Automation</span>
+                <ul class="text-[#ffffff99] sol_I_IV" >
+                  <li class="points">Light control</li>
+                  <li class="points">HVAC control</li>
+                  <li class="points">Voice control</li>
+                  <li class="points">Mobile Connectivity</li>
+                </ul>
+              </div>
+              <div>
+                <span style="color: white;">Industries</span>
+                <ul class="sol_I_IV">
+                  <li class="points">Motors</li>
+                  <li class="points">HVAC control</li>
+                  <li class="points">Dryers</li>
+                </ul>
+              </div>
+            </section>
+            <!-- Fourth -->
+            <section class="footer_III">
+              <span class="feedbck_title">Stores and Malls</span>
+              <ul class="text-[#ffffff99] sol_I_IV">
+                <li class="points">AV control</li>
+                <li class="points">Automation and Scheduling</li>
+                <li class="points">Diming and Speed control</li>
+              </ul>
+            </section>
+          </section>
+          <section>
+            <img
+              src="./public/line.svg"
+              alt=""
+              class="w-[90%] pl-[8rem]"
+              style="width: 90%; padding-left: 8rem"
+            />
+            <div class="flex pt-[1rem] pl-[8rem]">
+              <div class="flex gap-[6rem]">
+                <span class="text">
+                  Developed by Jayramana S and Vigneshwaran R
+                </span>
+                <span class="text">
+                  Copyright &copy; 2024 Zyre Home Automations All rights
+                  reserved
+                </span>
+              </div>
+              <div class="pl-[8rem] flex gap-[.5rem]">
+                <a
+                  href="./terms.html"
+                  rel="external nofollow noopener"
+                  target="_blank"
+                >
+                  <span class="text-[#ffffff99] hove">
+                    Terms and Conditions
+                  </span>
+                </a>
+                <span class="text-[#ffffff99] hove"> Privacy Policy </span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </main>
+
+    <script>
+      const switches = ["8 Switches", "4 Switches", "2 Switches"];
+      const color = ["White", "Silver", "Black"];
+      const imgs = [
+        "./public/8switch_new.png",
+        "./public/4gray_new.png",
+        "./public/2switch_new.png",
+      ];
+      let i = 0;
+      const switchElement = document.getElementById("switches");
+      const switchColor = document.getElementById("color");
+      const switchImage = document.getElementById("cimg");
+      function updateSwitchText() {
+        switchElement.textContent = ` ${switches[i]}`;
+        switchColor.textContent = ` ${color[i]}`;
+        switchImage.src = ` ${imgs[i]}`;
+      }
+      document.getElementById("changeProps").addEventListener("click", () => {
+        if (i < switches.length - 1) {
+          i += 1;
+        } else {
+          i = 0;
+        }
+        updateSwitchText();
+      });
+
+      document.getElementById("subProps").addEventListener("click", () => {
+        if (i > 0) {
+          i -= 1;
+        } else if (i === 0) {
+          i = 0;
+        }
+        updateSwitchText();
+      });
+    </script>
   </body>
 </html>

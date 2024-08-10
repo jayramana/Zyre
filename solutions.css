@@ -1,0 +1,130 @@
+@layer base {
+  @font-face {
+    font-family: "zyrefont";
+    src: url("./public/fonts/ARIAL.TTF") format("truetype");
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "zyrefont";
+}
+a {
+  text-decoration: none;
+}
+/* General container style */
+.container {
+  background-color: black; /* bg-black */
+  color: white; /* text-white */
+  height: 100%; /* h-[100%] */
+  display: flex; /* flex */
+  flex-direction: column;
+  gap: 2rem; /* flex-col */
+  padding: 10rem 4rem 4rem 4rem; /* px-[4rem] pt-[10rem] gap-[4rem] */
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+  position: fixed;
+  width: 100%;
+  color: white;
+  backdrop-filter: blur(
+    0.5rem
+  ); /* This represents the backdrop-blur-md in Tailwind */
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.small_list {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+.list {
+  color: white;
+  font-weight: 500;
+}
+
+.txt {
+  text-decoration: none;
+  background: linear-gradient(currentColor, currentColor) bottom / 0 0.1em
+    no-repeat;
+  transition: 0.5s background-size;
+}
+
+.txt:hover {
+  background-size: 100% 0.1em;
+}
+
+/* Variations */
+.txt.left {
+  background-position: left bottom;
+}
+/* Title styling */
+.title {
+  text-align: center; /* text-center */
+  font-weight: bold; /* font-bold */
+  font-size: 3rem; /* text-[3rem] */
+  padding-bottom: 2rem; /* pb-[2rem] */
+  background: linear-gradient(
+    to bottom,
+    #b59410,
+    #3f3001
+  ); /* bg-gradient-to-b from-[#B59410] to-[#3F3001] */
+  -webkit-background-clip: text; /* bg-clip-text */
+  color: transparent; /* text-transparent */
+  font-family: "zyrefont"; /* font-zyre */
+}
+
+/* Section styling */
+.section {
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  gap: 2rem; /* gap-[2rem] */
+}
+
+/* Image container styling */
+.image-container {
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+}
+
+/* Image styling */
+.image-large {
+  width: 250px; /* w-[100%] */
+  height: 200px; /* h-[200px] */
+  border-radius: 0.5rem; /* rounded-lg */
+}
+
+/* Text container styling */
+.text-container {
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-family: "zyrefont"; /* font-zyre */
+  padding-left: 2rem; /* pl-[2rem] */
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+/* Description styling */
+.description {
+  line-height: 2rem; /* leading-[2rem] */
+  padding: 1rem 2rem; /* px-[2rem] pt-[1rem] */
+  text-align: justify; /* text-justify */
+  color: #ffffff99; /* text-[#ffffff99] */
+  font-family: "zyrefont"; /* font-zyre */
+}
+
+/* Footer styling */
+footer {
+  /* Add footer styles here if needed */
+}

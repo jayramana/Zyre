@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="./products.css" />
+    <!-- Link to your CSS file -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <!-- AOS CSS -->
+  </head>
+  <body>
+    <main class="bg-black h-full">
+      <!-- Nav component here -->
+      <div>
+        <div class="nav">
+          <!-- {/* Image */} -->
+          <div>
+            <a href="/">
+              <img src="./public/new_logo.png" alt="" height="48px" />
+            </a>
+            <!-- {/* -->
+            <!-- */} -->
+          </div>
+          <div>
+            <ul class="small_list">
+              <div>
+                <a href="/">
+                  <li class="list txt left">Home</li>
+                </a>
+              </div>
+
+              <a href="./product.html">
+                <li class="list txt left">Products</li>
+              </a>
+              <a href="./solutions.html">
+                <li class="list txt left">Solutions</li>
+              </a>
+            </ul>
+          </div>
+          <div>
+            <button
+              variant="outline"
+              onClick="{scrollToBottom}"
+              style="
+                padding: 0.5rem;
+                background: none;
+                border-radius: 5px;
+                border: 0;
+                background-color: white;
+                color: black;
+                font-weight: 500;
+              "
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Products -->
+      <div class="products-container">
+        <p class="title_txt">ZYRE SMART BOX</p>
+        <p class="description">
+          A control module that is operable from your smartphone. Appliances can
+          be connected to the box via our mobile app which allows custom
+          programming of automation scenarios
+        </p>
+        <div class="product-list">
+          <div class="product-item" data-aos="fade-up" data-aos-duration="1000">
+            <img src="./public/2switch_new.png" alt="" class="product-image" />
+            <ul class="product-details">
+              <span class="product-details-title">Product Details</span>
+              <li>CONNECTIONS : 2 SWITCHS</li>
+              <li>MODULE CONNECTIVITY : WIFI</li>
+              <li>VOICE ASSISTANT : GOOGLE, SIRI</li>
+              <li>WARRENTY: 1 YEAR</li>
+              <li>CONNECTIVITY RANGE : ANYWHERE CONNECTIVITY</li>
+            </ul>
+          </div>
+          <div class="product-item" data-aos="fade-up" data-aos-duration="1000">
+            <img src="./public/4gray_new.png" alt="" class="product-image" />
+            <ul class="product-details">
+              <span class="product-details-title">Product Details</span>
+              <li>CONNECTIONS : 4 SWITCHS</li>
+              <li>MODULE CONNECTIVITY : WIFI</li>
+              <li>VOICE ASSISTANT : GOOGLE, SIRI</li>
+              <li>WARRENTY: 1 YEAR</li>
+              <li>CONNECTIVITY RANGE : ANYWHERE CONNECTIVITY</li>
+              <li>RELAY CHANNEL : <span>High volt connectivity</span></li>
+            </ul>
+          </div>
+          <div class="product-item" data-aos="fade-up" data-aos-duration="1000">
+            <img src="./public/8switch_new.png" alt="" class="product-image" />
+            <ul class="product-details">
+              <span class="product-details-title">Product Details</span>
+              <li>CONNECTIONS : 8 SWITCHS</li>
+              <li>MODULE CONNECTIVITY : WIFI</li>
+              <li>VOICE ASSISTANT : GOOGLE, SIRI</li>
+              <li>WARRENTY: 1 YEAR</li>
+              <li>CONNECTIVITY RANGE : ANYWHERE CONNECTIVITY</li>
+              <li>RELAY CHANNEL : <span>High volt connectivity</span></li>
+              <li>CONTROLS: <span>Dimming and speed Control</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Products -->
+
+      <!-- Footer component here -->
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    </main>
+  </body>
+</html>
