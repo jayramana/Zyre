@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  background: linear-gradient(to bottom, #000000, #403e3a);
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+  position: fixed;
+  width: 100%;
+  color: white;
+  backdrop-filter: blur(
+    0.5rem
+  ); /* This represents the backdrop-blur-md in Tailwind */
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.small_list {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+.list {
+  color: white;
+  font-weight: 500;
+}
+
+.txt {
+  text-decoration: none;
+  background: linear-gradient(currentColor, currentColor) bottom / 0 0.1em
+    no-repeat;
+  transition: 0.5s background-size;
+}
+
+.txt:hover {
+  background-size: 100% 0.1em;
+}
+
+/* Variations */
+.txt.left {
+  background-position: left bottom;
+}
+.home_I {
+  height: 100vh; /* h-screen */
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+.huge_img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.text_cont {
+  position: absolute;
+  top: 68%;
+  left: 27%;
+  font-weight: 550; /* This is a custom weight, slightly unusual as typical weights are 500, 600, etc. */
+}
+
+.huge_txt {
+  color: white;
+  z-index: 50;
+  font-size: 4rem;
+}
+
+.home_II {
+  height: 100vh;
+  display: flex;
+  padding-top: 2rem;
+  justify-content: center;
+  margin-top: 20rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 4rem;
+}
+
+.img_slide {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 25px 50px -12px rgba(181, 148, 16, 0.25); /* Approximation of shadow-2xl with custom color */
+  border-radius: 0.5rem; /* rounded-lg */
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.huge_img_II {
+  border-radius: 0.75rem; /* rounded-xl */
+  object-fit: contain; /* object-contain */
+  height: 350px;
+  width: 350px;
+  margin-left: 10rem;
+  margin-bottom: 5rem;
+  margin-top: 4rem;
+}
+
+.home_III {
+  height: 100vh; /* h-screen */
+  display: flex;
+  flex-direction: column; /* flex-col */
+  align-items: center; /* items-center */
+  justify-content: center; /* justify-center */
+  padding: 20rem; /* p-[20rem] */
+}
+
+.title_txt {
+  align-self: center; /* self-center */
+  font-size: 4rem; /* text-[4rem] */
+  font-weight: bold; /* font-bold */
+  padding-bottom: 1rem; /* pb-[1rem] */
+  background: linear-gradient(
+    to bottom,
+    #b59410,
+    #3f3001
+  ); /* bg-gradient-to-b from-[#B59410] to-[#3F3001] */
+  display: inline-block; /* inline-block */
+  color: transparent; /* text-transparent */
+  background-clip: text; /* bg-clip-text */
+  font-family: "font-zyre"; /* Assuming 'font-zyre' is a custom font family, replace with actual font if needed */
+}
+
+.abt {
+  color: rgba(255, 255, 255, 0.6); /* text-[#ffffff99] (hex with alpha) */
+  line-height: 2rem; /* leading-8 (assuming 1rem = 1 unit, 8 * 0.25rem = 2rem) */
+  text-align: center; /* text-center */
+  padding-bottom: 2rem; /* pb-[2rem] */
+  font-family: "font-zyre"; /* Assuming 'font-zyre' is a custom font family, replace with actual font if needed */
+}
+
+.home_IV {
+  height: 100vh; /* h-screen */
+  display: flex;
+  flex-direction: column; /* flex-col */
+  align-items: center; /* items-center */
+  justify-content: center; /* justify-center */
+}
+
+.vid {
+  height: 400px; /* h-[400px] */
+  width: 1200px; /* w-[1200px] */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 25px 50px -12px rgba(181, 148, 16, 0.25); /* shadow-2xl with custom color (#B59410) */
+}
+
+.sols {
+  height: 100vh; /* h-screen */
+  display: flex;
+  flex-direction: column; /* flex-col */
+  align-items: center; /* items-center */
+  justify-content: center; /* justify-center */
+  padding-left: 4rem; /* px-[4rem] */
+  padding-right: 4rem; /* px-[4rem] */
+  padding-bottom: 2rem; /* pb-[2rem] */
+}
+
+.sol_I {
+  display: flex;
+  flex-direction: column; /* flex-col */
+  justify-content: center; /* justify-center */
+}
+
+.sol_I_I {
+  display: flex;
+  gap: 15rem;
+}
+
+.sol_I_I_I {
+  display: flex;
+  gap: 12rem; /* gap-[12rem] */
+  align-items: center; /* items-center */
+  padding-top: 2rem; /* py-[2rem] */
+  padding-bottom: 2rem; /* py-[2rem] */
+}
+
+.sol_I_IV {
+  color: white; /* text-white */
+  list-style-type: disc; /* list-disc */
+}
+
+.sol_V {
+  display: flex;
+  flex-direction: column; /* flex-col */
+  gap: 0.5rem; /* gap-[.5rem] */
+  padding: 4rem; /* p-[4rem] */
+}
+
+.sol_V_I {
+  background-color: #000; /* bg-[#000] */
+  color: white; /* text-white */
+  padding: 2rem; /* p-[2rem] */
+  border-radius: 0.5rem; /* rounded-lg */
+  width: fit-content; /* w-fit */
+  display: flex;
+  flex-direction: column; /* flex-col */
+  justify-content: space-between; /* justify-between */
+  transition: all 500ms; /* transition-all duration-[500ms] */
+}
+
+.sol_V_I:hover {
+  transform: translateY(-10px); /* hover:translate-y-[-10px] */
+}
+
+.sol_V_II {
+  display: flex;
+  gap: 2rem; /* gap-[2rem] */
+  font-family: 'font-zyre'; /* font-zyre */
+}
+

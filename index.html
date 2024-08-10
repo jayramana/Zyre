@@ -1,11 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" />
     <title>Document</title>
-</head>
-<body>
-    <p>Hello</p>
-</body>
+  </head>
+  <body>
+    <main class="body">
+      <!-- {/* Nav-Start */} -->
+      <div>
+        <div class="nav">
+          <!-- {/* Image */} -->
+          <div>
+            <a href="/">
+              <img src="./public/new_logo.png" alt="" height="48px" />
+            </a>
+            <!-- {/* -->
+            <!-- */} -->
+          </div>
+          <div>
+            <ul class="small_list">
+              <div>
+                <a href="/">
+                  <li class="list txt left">Home</li>
+                </a>
+              </div>
+
+              <a href="/zyre_web/products">
+                <li class="list txt left">Products</li>
+              </a>
+              <a href="/zyre_web/solutions">
+                <li class="list txt left">Solutions</li>
+              </a>
+            </ul>
+          </div>
+          <div>
+            <button variant="outline" onClick="{scrollToBottom}">
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+      {/* Nav-End */} {/* Home-Start */}
+      <div class="home_I">
+        <img src="./public/home.svg" alt="" class="huge_img" />
+        <div class="text_cont">
+          <p class="huge_txt">Zyre Home Automations</p>
+        </div>
+      </div>
+
+      {/* Home-End */} {/* Image slide */}
+      <div class="home_II" data-aos="fade-up" data-aos-duration="1000">
+        <GoChevronLeft
+          class="text-white self-center text-4xl"
+          onClick="{Sub_Props}"
+        />
+        <div class="slide">
+          <div class="img_slide">
+            <a
+              href="products
+             "
+            >
+              <img src="./public/2switch_new.png" alt="" class="huge_img_II" />
+            </a>
+
+            <div class="duration-all">
+              <p class="text-white text-2xl pb-[.3rem] font-zyre">
+                {switches[i]}
+              </p>
+              <div class="flex gap-[1rem]">
+                <p
+                  class="border-[2px] border-white rounded-md text-white border-solid inline-block px-[4px] py-[2px] text-xs font-zyre"
+                >
+                  {color[i]}
+                </p>
+                <p
+                  class="border-[2px] border-white rounded-md text-white border-solid inline-block px-[4px] py-[2px] text-xs font-zyre"
+                >
+                  {connect}
+                </p>
+                <p
+                  class="border-[2px] border-white rounded-md text-white border-solid inline-block px-[4px] py-[2px] text-xs font-zyre"
+                >
+                  {voice}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <GoChevronRight
+          class="text-white self-center text-4xl"
+          onClick="{Change_Props}"
+        />
+      </div>
+      {/* Image slide */} {/* About Zyre */}
+
+      <div class="home_III" data-aos="fade-up" data-aos-duration="1000">
+        <span class="title_txt"> About ZYRE </span>
+        <p class="abt">
+          Zyre pioneers seamless home automation solutions, blending advanced
+          technology with intuitive design to transform living spaces into smart
+          environments. From integrated security systems to energy-efficient
+          controls, Zyre redefines modern living through innovation and
+          connectivity.
+        </p>
+        <button variant="outline" class="hover:shadow-md font-zyre">
+          Learn more
+        </button>
+      </div>
+      <!-- {/* About Zyre */} {/* Video */} -->
+      <div class="home_IV" data-aos="fade-up" data-aos-duration="1000">
+        <p class="title_txt">Demo Video</p>
+        <video src="./public/zyre_demo.mp4" class="vid" controls></video>
+      </div>
+      {/* Video */} {/* Solutions */}
+      <div class="sols" data-aos="fade-up" data-aos-duration="1000">
+        <span class="title_txt"> Solutions </span>
+        <img src="./public/line.svg" alt="" style="width: 85%" />
+        <div class="sol_I">
+          <div class="sol_I_I">
+            <section class="sol_I_I_I">
+              <div style="display: flex">
+                <p
+                  style="
+                    color: white;
+                    font-size: x-large;
+                    font-family: font-zyre;
+                  "
+                >
+                  Home Automation
+                </p>
+              </div>
+              <ul class="sol_I_IV">
+                <li class="text-[#ffffff99] font-zyre">Light control</li>
+                <li class="text-[#ffffff99] font-zyre">HVAC control</li>
+                <li class="text-[#ffffff99] font-zyre">Voice control</li>
+                <li class="text-[#ffffff99] font-zyre">Mobile Connectivity</li>
+                <li class="text-[#ffffff99] font-zyre">Kitchen Appliances</li>
+              </ul>
+            </section>
+            <section class="sol_I_I_I">
+              <div style="display: flex">
+                <p class="text-white text-xl font-zyre">Security Systems</p>
+              </div>
+              <ul class="sol_I_IV">
+                <li class="text-[#ffffff99] font-zyre">Smart Cameras</li>
+                <li class="text-[#ffffff99] font-zyre">Door Locks</li>
+                <li class="text-[#ffffff99] font-zyre">Motion Sensors</li>
+                <li class="text-[#ffffff99] font-zyre">Alarm Systems</li>
+              </ul>
+            </section>
+          </div>
+          <img src="./public/line.svg" alt="" style="width: 95%" />
+          <section class="sol_I_I_I">
+            <div>
+              <p class="text-white text-xl font-zyre">Stores and Malls</p>
+            </div>
+            <ul class="sol_I_IV">
+              <li class="text-[#ffffff99] font-zyre">AV control</li>
+              <li class="text-[#ffffff99] font-zyre">
+                Automation and Scheduling
+              </li>
+              <li class="text-[#ffffff99] font-zyre">Speed control</li>
+            </ul>
+          </section>
+          <img src="./public/line.svg" alt="" style="width: 95%" />
+          <section class="sol_I_I_I">
+            <div>
+              <p class="text-white text-xl font-zyre">Industries</p>
+            </div>
+            <ul class="sol_I_IV">
+              <li class="text-[#ffffff99] font-zyre">Motors</li>
+              <li class="text-[#ffffff99] font-zyre">HVAC control</li>
+              <li class="text-[#ffffff99] font-zyre">Dryers</li>
+            </ul>
+          </section>
+          <img src="./public/line.svg" alt="" style="width: 95%" />
+        </div>
+      </div>
+      <div
+        class="sol_V"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <p
+          class="title_txt"
+        >
+          Customer Feedback
+        </p>
+        <div class="sol_V_II">
+          <div
+            class="sol_V_I"
+          >
+            <p class="leading-[2rem] text-sm text-justify">
+              Upon acquiring the Zyre Automation Kit, my professional routine
+              transformed into a highly efficient operation. This innovative
+              technology allows me to seamlessly control my devices throughout
+              the workspace, significantly enhancing convenience, optimizing
+              time management, and reducing energy consumption costs.
+            </p>
+            <div class="pb-[1rem] flex flex-col items-center">
+              <p class="text-2xl">Mr.Saravanan</p>
+              <span class="text-xs text-[#ffffff99]">Shop Owner</span>
+            </div>
+          </div>
+          <div
+            class="sol_V_I"
+          >
+            <p class="leading-[2rem] text-sm">
+              I had the Zyre Home Automation Kit installed, and it was a
+              seamless process handled by professional technicians. The pricing
+              is reasonable, offering great value for the features provided.
+              Using the system has drastically reduced the time spent managing
+              home appliances, with easy control via smartphone and efficient
+              scheduling. Overall, it is a fantastic addition, making my home
+              smarter and my daily routine more convenient.
+            </p>
+            <div class="pb-[1rem] flex flex-col items-center">
+              <p class="text-2xl">Mr.Rajesh</p>
+              <span class="text-xs text-[#ffffff99]">House Owner</span>
+            </div>
+          </div>
+          <div
+            class="sol_V_I"
+          >
+            <p class="leading-[2rem] text-sm">
+              We installed the Zyre Home Automation Kit in our office. The
+              installation was quick and professional. The system is reasonably
+              priced and offers excellent value. It has significantly improved
+              scheduling and control over various office functions, and the
+              notification system ensures smooth operations. Overall, it has
+              made our workplace more efficient and streamlined. Highly
+              recommended for any business looking to enhance productivity and
+              management.
+            </p>
+            <div class="pb-[1rem] flex flex-col items-center">
+              <p class="text-2xl">Mr.Sidharth</p>
+              <span class="text-xs text-[#ffffff99]">
+                Small scale Industrialist
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Customer FeedBack */}
+
+      <div ref="{bottomRef}">
+        {/* Feedback */}
+        <div
+          class="h-screen px-[4rem] mt-[20rem]"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          {/* Image */}
+          <div class="flex gap-[20rem]">
+            <div>
+              <p
+                class="text-center font-bold text-[4rem] pb-[2rem] bg-gradient-to-b from-[#B59410] to-[#3F3001] inline-block text-transparent bg-clip-text font-zyre"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                For Enquiry
+              </p>
+              <div class="flex flex-col gap-[2rem]">
+                <p class="text-white">
+                  Send a mail to{" "}
+                  <span class="text-[#ffffff99] underline">
+                    zyrehomeautomations@gmail.com
+                  </span>
+                </p>
+                <p class="text-white">
+                  Call{" "}
+                  <span class="text-[#ffffff99] underline"> +918525928155 </span
+                  >{" "} for more details{" "}
+                </p>
+              </div>
+            </div>
+            {/* Image */} {/* Inputs */}
+            <div class="flex flex-col gap-[2rem] pt-[2rem]">
+              <section class="flex gap-[1rem]">
+                <input type="text" placeholder="Name" class="w-[300px]" />
+                <input type="email" placeholder="Email" class="w-[300px]" />
+              </section>
+              <section class="flex gap-[1rem]">
+                <input type="tel" placeholder="Telephone" class="w-[300px]" />
+                <input type="text" placeholder="City" class="w-[300px]" />
+              </section>
+              <textarea placeholder="Address" />
+              <button type="submit" variant="outline" class="w-fit flex">
+                Submit
+              </button>
+            </div>
+          </div>
+          {/* Inputs */}
+        </div>
+      </div>
+      {/* Feedback */} {/* Footer */}
+      <footer />
+      {/* Footer */}
+    </main>
+  </body>
 </html>
