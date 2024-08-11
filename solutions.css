@@ -128,3 +128,77 @@ a {
 footer {
   /* Add footer styles here if needed */
 }
+
+.footer {
+  background-color: black; /* bg-black */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* flex-col */
+}
+.footer_I {
+  display: flex; /* flex */
+  padding-left: 6rem;
+  gap: 2rem; /* gap-[2rem] */
+}
+
+.footer_II {
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  gap: 4rem; /* gap-[4rem] */
+  padding-top: 4rem; /* pt-[4rem] */
+  padding-bottom: 2rem; /* pb-[2rem] */
+  padding-left: 2rem; /* pl-[2rem] */
+  padding-right: 2rem; /* pr-[2rem] */
+}
+
+.footer_III {
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  padding-top: 4rem; /* pt-[4rem] */
+  padding-bottom: 2rem; /* pb-[2rem] */
+  padding-left: 8rem; /* pl-[8rem] */
+  padding-right: 2rem; /* pr-[2rem] */
+}
+
+.feedbck_title {
+  color: white; /* text-white */
+  font-weight: bold; /* font-bold */
+}
+.feedbck_lnk {
+  color: #ffffff99; /* text-[#ffffff99] */
+  cursor: pointer; /* cursor-pointer */
+}
+
+.feedbck_lnk:hover {
+  color: white; /* hover:text-white */
+}
+
+.points {
+  cursor: pointer; /* cursor-pointer */
+  color: #ffffff99; /* text-[#ffffff99] */
+}
+
+.points:hover {
+  color: white; /* hover:text-white */
+}
+.feedbck {
+  display: flex;
+  flex-direction: column; /* flex-col */
+  gap: 2rem; /* gap-[2rem] */
+  padding-top: 2rem; /* pt-[2rem] */
+}
+
+.sol_I_IV {
+  color: white; /* text-white */
+  list-style-type: none; /* list-disc */
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.text{
+  color: #ffffff99; /* text-[#ffffff99] */
+
+}
+.text:hover{
+  color: white; /* hover:text-white */
+}

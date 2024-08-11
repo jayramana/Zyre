@@ -107,7 +107,7 @@ a {
 .img_slide {
   display: flex;
   justify-content: center;
-  box-shadow: 0 25px 50px -12px rgba(181, 148, 16, 0.25); /* Approximation of shadow-2xl with custom color */
+  box-shadow: 0 10px 15px -3px rgba(181, 148, 16, 0.25); /* Approximation of shadow-2xl with custom color */
   border-radius: 0.5rem; /* rounded-lg */
   padding-left: 4rem;
   padding-right: 4rem;
@@ -168,7 +168,7 @@ a {
   height: 400px; /* h-[400px] */
   width: 1200px; /* w-[1200px] */
   border-radius: 0.5rem; /* rounded-lg */
-  box-shadow: 0 25px 50px -12px rgba(181, 148, 16, 0.25); /* shadow-2xl with custom color (#B59410) */
+  box-shadow: 0 10px 15px -3px rgba(181, 148, 16, 0.25); /* shadow-2xl with custom color (#B59410) */
 }
 
 .sols {
@@ -203,7 +203,7 @@ a {
 
 .sol_I_IV {
   color: white; /* text-white */
-  list-style-type: disc; /* list-disc */
+  list-style-type: none; /* list-disc */
   display: flex;
   flex-direction: column;
   gap: .2rem;
@@ -255,7 +255,6 @@ a {
   background-color: black; /* bg-black */
   display: flex; /* Enable flexbox */
   flex-direction: column; /* flex-col */
-  height: 80vh; /* h-[80vh] */
 }
 .footer_I {
   display: flex; /* flex */
@@ -339,4 +338,7 @@ a {
 
 .points:hover {
   color: white; /* hover:text-white */
+}
+.text{
+  color: white;
 }
