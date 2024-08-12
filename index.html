@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./styles.css" rel="stylesheet" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <title>Zyre Home Automations</title>
   </head>
   <body>
     <main class="body">
@@ -132,7 +136,21 @@
           controls, Zyre redefines modern living through innovation and
           connectivity.
         </p>
-        <button variant="outline" class="hov">Learn more</button>
+        <button
+          variant="outline"
+          class="hov"
+          style="
+            padding: 0.5rem;
+            background: none;
+            border-radius: 5px;
+            border: 0;
+            background-color: white;
+            color: black;
+            font-weight: 500;
+          "
+        >
+          <a href="./product.html" style="color: black;">Learn more</a>
+        </button>
       </div>
       <!-- {/* About Zyre */} {/* Video */} -->
       <div class="home_IV" data-aos="fade-up" data-aos-duration="1000">
@@ -184,7 +202,7 @@
             <div>
               <p style="color: white; font-size: x-large">Industries</p>
             </div>
-            <ul class="sol_I_IV">
+            <ul class="sol_I_IV" style="padding-left: 5rem">
               <li class="lst_txt">Motors</li>
               <li class="lst_txt">HVAC control</li>
               <li class="lst_txt">Dryers</li>
@@ -254,7 +272,7 @@
                 <p class="text-white" style="color: white">
                   Send a mail to
                   <span class="text-[#ffffff99] underline">
-                    zyrehomeautomations@gmail.com
+                    zyrehomeautomation@gmail.com
                   </span>
                 </p>
                 <p class="text-white" style="color: white">
@@ -299,6 +317,7 @@
                 rows="4"
                 cols="50"
                 placeholder="Type your text here..."
+                style="border-radius: 5px;"
               ></textarea>
               <button
                 type="submit"
@@ -352,14 +371,14 @@
             <!-- Two -->
             <section class="footer_II">
               <div>
-                <p class="feedbck_title">Quick Links</p>
+                <p class="feedbck_title" style="padding-bottom: .5rem;">Quick Links</p>
                 <ul class="sol_I_IV">
                   <li class="feedbck_lnk">
-                    <a href="./index.html" style="color: white;">Home</a>
+                    <a href="./index.html" style="color: #ffffff99">Home</a>
                   </li>
                   <li class="feedbck_lnk">Company</li>
                   <li class="feedbck_lnk">
-                    <a href="./solutions.html" style="color: white;">Products</a>
+                    <a href="./product.html" class="lnk" style="color: #ffffff99;" >Products</a>
                   </li>
                   <li class="feedbck_lnk">Contact</li>
                 </ul>
@@ -378,8 +397,8 @@
             <!-- Three -->
             <section class="footer_II">
               <div>
-                <span class="feedbck_title">Home Automation</span>
-                <ul class="text-[#ffffff99] sol_I_IV" >
+                <p class="feedbck_title" style="padding-bottom: .5rem;">Home Automation</p>
+                <ul class="text-[#ffffff99] sol_I_IV">
                   <li class="points">Light control</li>
                   <li class="points">HVAC control</li>
                   <li class="points">Voice control</li>
@@ -387,7 +406,7 @@
                 </ul>
               </div>
               <div>
-                <span style="color: white;">Industries</span>
+                <p style="color: white; padding-bottom: .5rem;">Industries</p>
                 <ul class="sol_I_IV">
                   <li class="points">Motors</li>
                   <li class="points">HVAC control</li>
@@ -397,7 +416,7 @@
             </section>
             <!-- Fourth -->
             <section class="footer_III">
-              <span class="feedbck_title">Stores and Malls</span>
+              <span class="feedbck_title" style="padding-bottom: .5rem;">Stores and Malls</span>
               <ul class="text-[#ffffff99] sol_I_IV">
                 <li class="points">AV control</li>
                 <li class="points">Automation and Scheduling</li>
@@ -412,8 +431,11 @@
               class="w-[90%] pl-[8rem]"
               style="width: 90%; padding-left: 8rem"
             />
-            <div class="flex pt-[1rem] pl-[8rem]" style="display: flex; padding-top: 1rem; padding-left: 8rem;">
-              <div class="flex gap-[6rem]" style="display: flex; gap: 6rem;">
+            <div
+              class="flex pt-[1rem] pl-[8rem]"
+              style="display: flex; padding-top: 1rem; padding-left: 8rem"
+            >
+              <div class="flex gap-[6rem]" style="display: flex; gap: 6rem">
                 <span class="text">
                   Developed by Jayramana S and Vigneshwaran R
                 </span>
@@ -422,15 +444,16 @@
                   reserved
                 </span>
               </div>
-              <div class="pl-[8rem] flex gap-[.5rem]" style="display: flex; padding-left: 8rem; gap: .5rem;">
+              <div
+                class="pl-[8rem] flex gap-[.5rem]"
+                style="display: flex; padding-left: 8rem; gap: 0.5rem"
+              >
                 <a
                   href="./terms.html"
                   rel="external nofollow noopener"
                   target="_blank"
                 >
-                  <span class="text">
-                    Terms and Conditions
-                  </span>
+                  <span class="text"> Terms and Conditions </span>
                 </a>
                 <span class="text"> Privacy Policy </span>
               </div>
@@ -474,6 +497,10 @@
         }
         updateSwitchText();
       });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
