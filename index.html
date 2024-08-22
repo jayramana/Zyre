@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./styles.css" rel="stylesheet" />
+     <link rel="icon" href="/public/homelogo.jpg" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
@@ -40,6 +41,7 @@
             </ul>
           </div>
           <div>
+            <a href="#new_form>
             <button
               variant="outline"
               onClick="{scrollToBottom}"
@@ -56,6 +58,7 @@
             >
               Contact Us
             </button>
+            </a>
           </div>
         </div>
       </div>
@@ -135,8 +138,17 @@
           Zyre pioneers seamless home automation solutions, blending advanced
           technology with intuitive design to transform living spaces into smart
           environments. From integrated security systems to energy-efficient
-          controls, Zyre redefines modern living through innovation and
-          connectivity.
+          controls, We redefines modern living through innovation and
+          connectivity.Zyre Home Automation is a dynamic startup committed 
+          to making smart living accessible to everyone. With a strong focus
+          on affordability, We offers innovative home automation solutions
+          that are both cost-effective and easy to use. Our systems are
+          designed for seamless connectivity, allowing users to effortlessly
+          control and monitor their homes. We provides a range of customizable 
+          options, including 2-switch, 4-switch, and 8-switch setups, catering to
+          different needs and home sizes. Guided by the motto "Be smart, live smart,
+          " Zyre is dedicated to creating a smarter, more connected future for India,
+          making advanced home automation simple and affordable for all.
         </p>
         <button variant="outline" class="learn">
           <a href="./product.html" class="lt" style="color: black"
@@ -159,11 +171,11 @@
                 <p class="sol_title">Home Automation</p>
               </div>
               <ul class="sol_I_IV o_l">
-                <li class="lst_txt">Light control</li>
-                <li class="lst_txt">HVAC control</li>
-                <li class="lst_txt">Voice control</li>
-                <li class="lst_txt">Mobile Connectivity</li>
-                <li class="lst_txt">Kitchen Appliances</li>
+                <a href="/solutions.html"> <li class="lst_txt">Light control</li></a>
+                <a href="/solutions.html"><li class="lst_txt">HVAC control</li></a>
+                <a href="/solutions.html"><li class="lst_txt">Voice control</li></a>
+                <a href="/solutions.html"><li class="lst_txt">Mobile Connectivity</li></a>
+                <a href="/solutions.html"><li class="lst_txt">Kitchen Appliances</li></a>
               </ul>
             </section>
             <section class="sol_I_I_I">
@@ -172,9 +184,9 @@
               </div>
               <ul class="sol_I_IV">
                 <li class="lst_txt">Smart Cameras</li>
-                <li class="lst_txt">Door Locks</li>
+                <li class="lst_txt">Door Locks *</li>
                 <li class="lst_txt">Motion Sensors</li>
-                <li class="lst_txt">Alarm Systems</li>
+                <li class="lst_txt">Alarm Systems *</li>
               </ul>
             </section>
           </div>
@@ -253,7 +265,7 @@
         </div>
       </div>
 
-      <div>
+      <div ref="{bottomRef}">
         <div class="sol_VI" data-aos="fade-up" data-aos-duration="1000">
           <div class="feedback">
             <div>
@@ -273,7 +285,7 @@
                     class="text-[#ffffff99] underline"
                     style="color: #ffffff99; text-decoration: underline"
                   >
-                    +918525928155
+                    +91 8525928155
                   </span>
                   for more details
                 </p>
@@ -328,6 +340,7 @@
               >
                 Submit
               </button>
+              
             </div>
           </div>
           <!-- {/* Inputs */} -->
