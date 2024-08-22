@@ -43,6 +43,7 @@
             <button
               variant="outline"
               onClick="{scrollToBottom}"
+              class="nav_btn"
               style="
                 padding: 0.5rem;
                 background: none;
@@ -85,10 +86,7 @@
 
         <div class="slide">
           <div class="img_slide">
-            <a
-              href="products
-             "
-            >
+            <a href="./product.html">
               <img
                 src="./public/2switch_new.png"
                 alt=""
@@ -101,9 +99,13 @@
               <p class="text-white text-2x" style="color: white" id="switches">
                 8 Switches
               </p>
-              <div class="flex gap-[1rem]">
+              <div class="flex gap-[1rem] tags">
                 <p class="tag" id="color">White</p>
-                <p class="tag">Wi-Fi</p>
+                <div class="tag" style="display: flex">
+                  <p class="">Wi</p>
+                  <p class="">-</p>
+                  <p class="">Fi</p>
+                </div>
                 <p class="tag">Google,Siri</p>
               </div>
             </div>
@@ -136,20 +138,10 @@
           controls, Zyre redefines modern living through innovation and
           connectivity.
         </p>
-        <button
-          variant="outline"
-          class="hov"
-          style="
-            padding: 0.5rem;
-            background: none;
-            border-radius: 5px;
-            border: 0;
-            background-color: white;
-            color: black;
-            font-weight: 500;
-          "
-        >
-          <a href="./product.html" style="color: black;">Learn more</a>
+        <button variant="outline" class="learn">
+          <a href="./product.html" class="lt" style="color: black"
+            >Learn more</a
+          >
         </button>
       </div>
       <!-- {/* About Zyre */} {/* Video */} -->
@@ -164,9 +156,9 @@
           <div class="sol_I_I">
             <section class="sol_I_I_I">
               <div style="display: flex">
-                <p style="color: white; font-size: x-large">Home Automation</p>
+                <p class="sol_title">Home Automation</p>
               </div>
-              <ul class="sol_I_IV">
+              <ul class="sol_I_IV o_l">
                 <li class="lst_txt">Light control</li>
                 <li class="lst_txt">HVAC control</li>
                 <li class="lst_txt">Voice control</li>
@@ -176,7 +168,7 @@
             </section>
             <section class="sol_I_I_I">
               <div style="display: flex">
-                <p style="color: white; font-size: x-large">Security Systems</p>
+                <p class="sol_title">Security Systems</p>
               </div>
               <ul class="sol_I_IV">
                 <li class="lst_txt">Smart Cameras</li>
@@ -189,9 +181,9 @@
           <img src="./public/line.svg" alt="" style="width: 95%" />
           <section class="sol_I_I_I">
             <div>
-              <p style="color: white; font-size: x-large">Stores and Malls</p>
+              <p class="sol_title">Stores and Malls</p>
             </div>
-            <ul class="sol_I_IV">
+            <ul class="sol_I_IV t_l">
               <li class="lst_txt">AV control</li>
               <li class="lst_txt">Automation and Scheduling</li>
               <li class="lst_txt">Speed control</li>
@@ -200,9 +192,9 @@
           <img src="./public/line.svg" alt="" style="width: 95%" />
           <section class="sol_I_I_I">
             <div>
-              <p style="color: white; font-size: x-large">Industries</p>
+              <p class="sol_title">Industries</p>
             </div>
-            <ul class="sol_I_IV" style="padding-left: 5rem">
+            <ul class="sol_I_IV th_l" style="padding-left: 5rem">
               <li class="lst_txt">Motors</li>
               <li class="lst_txt">HVAC control</li>
               <li class="lst_txt">Dryers</li>
@@ -223,7 +215,7 @@
               time management, and reducing energy consumption costs.
             </p>
             <div class="name_col">
-              <p style="font-size: x-large">Mr.Saravanan</p>
+              <p class="name_feed">Mr.Saravanan</p>
               <span class="desig">Shop Owner</span>
             </div>
           </div>
@@ -238,7 +230,7 @@
               smarter and my daily routine more convenient.
             </p>
             <div class="name_col">
-              <p style="font-size: x-large">Mr.Rajesh</p>
+              <p class="name_feed">Mr.Rajesh</p>
               <span class="desig">House Owner</span>
             </div>
           </div>
@@ -254,18 +246,18 @@
               management.
             </p>
             <div class="name_col">
-              <p style="font-size: x-large">Mr.Sidharth</p>
+              <p class="name_feed">Mr.Sidharth</p>
               <span class="desig"> Small scale Industrialist </span>
             </div>
           </div>
         </div>
       </div>
 
-      <div ref="{bottomRef}">
+      <div>
         <div class="sol_VI" data-aos="fade-up" data-aos-duration="1000">
-          <div style="display: flex; gap: 20rem">
+          <div class="feedback">
             <div>
-              <p class="title_txt" data-aos="fade-up" data-aos-duration="1000">
+              <p class="title_txt">
                 For Enquiry
               </p>
               <div style="display: flex; flex-direction: column; gap: 2rem">
@@ -317,7 +309,7 @@
                 rows="4"
                 cols="50"
                 placeholder="Type your text here..."
-                style="border-radius: 5px;"
+                style="border-radius: 5px"
               ></textarea>
               <button
                 type="submit"
@@ -371,14 +363,21 @@
             <!-- Two -->
             <section class="footer_II">
               <div>
-                <p class="feedbck_title" style="padding-bottom: .5rem;">Quick Links</p>
+                <p class="feedbck_title" style="padding-bottom: 0.5rem">
+                  Quick Links
+                </p>
                 <ul class="sol_I_IV">
                   <li class="feedbck_lnk">
                     <a href="./index.html" style="color: #ffffff99">Home</a>
                   </li>
                   <li class="feedbck_lnk">Company</li>
                   <li class="feedbck_lnk">
-                    <a href="./product.html" class="lnk" style="color: #ffffff99;" >Products</a>
+                    <a
+                      href="./product.html"
+                      class="lnk"
+                      style="color: #ffffff99"
+                      >Products</a
+                    >
                   </li>
                   <li class="feedbck_lnk">Contact</li>
                 </ul>
@@ -397,7 +396,9 @@
             <!-- Three -->
             <section class="footer_II">
               <div>
-                <p class="feedbck_title" style="padding-bottom: .5rem;">Home Automation</p>
+                <p class="feedbck_title" style="padding-bottom: 0.5rem">
+                  Home Automation
+                </p>
                 <ul class="text-[#ffffff99] sol_I_IV">
                   <li class="points">Light control</li>
                   <li class="points">HVAC control</li>
@@ -406,7 +407,7 @@
                 </ul>
               </div>
               <div>
-                <p style="color: white; padding-bottom: .5rem;">Industries</p>
+                <p style="color: white; padding-bottom: 0.5rem">Industries</p>
                 <ul class="sol_I_IV">
                   <li class="points">Motors</li>
                   <li class="points">HVAC control</li>
@@ -416,7 +417,9 @@
             </section>
             <!-- Fourth -->
             <section class="footer_III">
-              <span class="feedbck_title" style="padding-bottom: .5rem;">Stores and Malls</span>
+              <span class="feedbck_title" style="padding-bottom: 0.5rem"
+                >Stores and Malls</span
+              >
               <ul class="text-[#ffffff99] sol_I_IV">
                 <li class="points">AV control</li>
                 <li class="points">Automation and Scheduling</li>

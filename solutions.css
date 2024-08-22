@@ -202,3 +202,45 @@ footer {
 .text:hover{
   color: white; /* hover:text-white */
 }
+
+@media (max-width: 768px) {
+  .nav {
+    gap: 0;
+    justify-content: start;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    font-size: small;
+  }
+  .nav_btn {
+    font-size: small;
+    padding: 0;
+  }
+  .small_list {
+    gap: 0.5rem;
+  }
+  .text_cont {
+    top: 23%;
+    right: 1%;
+    left: 30%;
+  }
+
+  .section {
+    display: flex; /* flex */
+    flex-direction: column;
+    align-items: center; /* items-center */
+    gap: 2rem; /* gap-[2rem] */
+  }
+
+  .section:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+  
+  .subtitle{
+    font-size: medium;
+  }
+
+  .description{
+    font-size: small;
+  }
+}

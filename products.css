@@ -112,9 +112,9 @@ body {
     #3f3001
   ); /* bg-gradient-to-b from-[#B59410] to-[#3F3001] */
   display: inline-block; /* inline-block */
-  color: transparent; /* text-transparent */
-  background-clip: text; /* bg-clip-text */
-  font-family: "zyrefont"; /* Assuming 'font-zyre' is a custom font family, replace with actual font if needed */
+  color: transparent; 
+  background-clip: text; 
+  font-family: "zyrefont"; 
 }
 .product-details-title {
   text-transform: uppercase;
@@ -202,4 +202,70 @@ body {
 }
 .text:hover {
   color: white; /* hover:text-white */
+}
+@media (max-width: 768px) {
+
+.nav {
+  gap: 0;
+  justify-content: start;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  font-size: small;
+}
+.nav_btn {
+  font-size: small;
+  padding: 0;
+}
+.small_list {
+  padding: 0;
+  gap: 0.5rem;
+}
+.text_cont {
+  top: 23%;
+  right: 1%;
+  left: 30%;
+}
+
+.title_txt {
+  font-size: 1rem;
+}
+.description{
+  font-size: small;
+  line-height: 1.5rem;
+  text-align: center;
+}
+.product-item {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #b59410;
+  border-radius: 8px;
+  gap: 2rem;
+  padding: 0;
+}
+
+.product-image {
+  height: 200px;
+  width: 200px;
+  align-self: center;
+}
+.product-details {
+  padding-top: 0;
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.product-details li {
+  color: #ffffff99;
+  font-family: "Font-zyre", sans-serif;
+  font-size: x-small;
+}
+.product-details-title{
+  font-size: small;
+
+
+}
+
+
 }
