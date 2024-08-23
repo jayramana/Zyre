@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="icon" href="/public/homelogo.jpg" type="image/x-icon">
+    <link rel="icon" href="/public/homelogo.jpg" type="image/x-icon" />
     <title>Products</title>
     <link rel="stylesheet" href="./products.css" />
     <!-- Link to your CSS file -->
@@ -42,21 +42,13 @@
             </ul>
           </div>
           <div>
-            <button
-              variant="outline"
-              onClick="{scrollToBottom}"
-              class="nav_btn"
-              style="
-                padding: 0.5rem;
-                background: none;
-                border-radius: 5px;
-                border: 0;
-                background-color: white;
-                color: black;
-                font-weight: 500;
-              "
-            >
-              Download
+            <button variant="outline" class="nav_btn">
+              <a
+                href="/public/brochure.pdf"
+                download="brochure.pdf"
+                style="color: black"
+                >Download</a
+              >
             </button>
           </div>
         </div>
@@ -78,7 +70,9 @@
               <li class="text_lst">MODULE CONNECTIVITY : WIFI</li>
               <li class="text_lst">VOICE ASSISTANT : GOOGLE, SIRI</li>
               <li class="text_lst">WARRENTY: 1 YEAR</li>
-              <li class="text_lst">CONNECTIVITY RANGE : ANYWHERE CONNECTIVITY</li>
+              <li class="text_lst">
+                CONNECTIVITY RANGE : ANYWHERE CONNECTIVITY
+              </li>
             </ul>
           </div>
           <div class="product-item" data-aos="fade-up" data-aos-duration="1000">
@@ -117,7 +111,7 @@
           <section class="footer_I">
             <section class="feedbck">
               <div>
-                <img src="./public/new_logo.png" alt="" />
+                <img src="./public/new_logo.png" alt="" class="foot_img" />
               </div>
               <div class="feedbck_I">
                 <span class="feedbck_title">Follow us on</span>
@@ -139,14 +133,21 @@
             <!-- Two -->
             <section class="footer_II">
               <div>
-                <p class="feedbck_title">Quick Links</p>
-                <ul class="sol_I_IV" style="padding: 0">
+                <p class="feedbck_title" style="padding-bottom: 0.5rem">
+                  Quick Links
+                </p>
+                <ul class="sol_I_IV">
                   <li class="feedbck_lnk">
-                    <a href="./index.html" style="color: white">Home</a>
+                    <a href="./index.html" style="color: #ffffff99">Home</a>
                   </li>
                   <li class="feedbck_lnk">Company</li>
                   <li class="feedbck_lnk">
-                    <a href="./solutions.html" style="color: white">Products</a>
+                    <a
+                      href="./product.html"
+                      class="lnk"
+                      style="color: #ffffff99"
+                      >Products</a
+                    >
                   </li>
                   <li class="feedbck_lnk">Contact</li>
                 </ul>
@@ -165,17 +166,19 @@
             <!-- Three -->
             <section class="footer_II">
               <div>
-                <span class="feedbck_title">Home Automation</span>
-                <ul class="text-[#ffffff99] sol_I_IV" style="padding: 0">
+                <p class="feedbck_title" style="padding-bottom: 0.5rem">
+                  Home Automation
+                </p>
+                <ul class="text-[#ffffff99] sol_I_IV">
                   <li class="points">Light control</li>
                   <li class="points">HVAC control</li>
                   <li class="points">Voice control</li>
                   <li class="points">Mobile Connectivity</li>
                 </ul>
               </div>
-              <div>
-                <span style="color: white">Industries</span>
-                <ul class="sol_I_IV" style="padding: 0">
+              <div class="hide">
+                <p style="color: white; padding-bottom: 0.5rem">Industries</p>
+                <ul class="sol_I_IV">
                   <li class="points">Motors</li>
                   <li class="points">HVAC control</li>
                   <li class="points">Dryers</li>
@@ -183,9 +186,11 @@
               </div>
             </section>
             <!-- Fourth -->
-            <section class="footer_III">
-              <span class="feedbck_title">Stores and Malls</span>
-              <ul class="text-[#ffffff99] sol_I_IV" style="padding: 0">
+            <section class="footer_III hide">
+              <span class="feedbck_title" style="padding-bottom: 0.5rem"
+                >Stores and Malls</span
+              >
+              <ul class="text-[#ffffff99] sol_I_IV">
                 <li class="points">AV control</li>
                 <li class="points">Automation and Scheduling</li>
                 <li class="points">Diming and Speed control</li>
@@ -196,20 +201,12 @@
             <img
               src="./public/line.svg"
               alt=""
-              class="w-[90%] pl-[6rem]"
-              style="width: 90%; padding-left: 6rem"
+              class="w-[90%] pl-[8rem]"
+              style="width: 90%; padding-left: 8rem"
             />
-            <div
-              class="flex pt-[1rem] pl-[8rem]"
-              style="
-                display: flex;
-                padding-top: 1rem;
-                padding-left: 6rem;
-                padding-bottom: 1rem;
-              "
-            >
-              <div class="flex gap-[6rem]" style="display: flex; gap: 6rem">
-                <span class="text">
+            <div class="footer_b" style="">
+              <div class="infs" style="">
+                <span class="text hide">
                   Developed by Jayramana S and Vigneshwaran R
                 </span>
                 <span class="text">
@@ -217,10 +214,7 @@
                   reserved
                 </span>
               </div>
-              <div
-                class="pl-[8rem] flex gap-[.5rem]"
-                style="display: flex; padding-left: 8rem; gap: 0.5rem"
-              >
+              <div class="tp">
                 <a
                   href="./terms.html"
                   rel="external nofollow noopener"

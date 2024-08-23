@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./styles.css" rel="stylesheet" />
-     <link rel="icon" href="/public/homelogo.jpg" type="image/x-icon">
+    <link rel="icon" href="/public/homelogo.jpg" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
@@ -41,23 +41,22 @@
             </ul>
           </div>
           <div>
-            <a href="#new_form>
-            <button
-              variant="outline"
-              onClick="{scrollToBottom}"
-              class="nav_btn"
-              style="
-                padding: 0.5rem;
-                background: none;
-                border-radius: 5px;
-                border: 0;
-                background-color: white;
-                color: black;
-                font-weight: 500;
-              "
-            >
-              Contact Us
-            </button>
+            <a href="#new_form">
+              <button
+                variant="outline"
+                class="nav_btn"
+                style="
+                  padding: 0.5rem;
+                  background: none;
+                  border-radius: 5px;
+                  border: 0;
+                  background-color: white;
+                  color: black;
+                  font-weight: 500;
+                "
+              >
+                <a href="#feed">Contact Us</a>
+              </button>
             </a>
           </div>
         </div>
@@ -91,7 +90,7 @@
           <div class="img_slide">
             <a href="./product.html">
               <img
-                src="./public/2switch_new.png"
+                src="./public/8switch_new.png"
                 alt=""
                 class="huge_img_II"
                 id="cimg"
@@ -102,7 +101,7 @@
               <p class="text-white text-2x" style="color: white" id="switches">
                 8 Switches
               </p>
-              <div class="flex gap-[1rem] tags">
+              <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem">
                 <p class="tag" id="color">White</p>
                 <div class="tag" style="display: flex">
                   <p class="">Wi</p>
@@ -139,16 +138,17 @@
           technology with intuitive design to transform living spaces into smart
           environments. From integrated security systems to energy-efficient
           controls, We redefines modern living through innovation and
-          connectivity.Zyre Home Automation is a dynamic startup committed 
-          to making smart living accessible to everyone. With a strong focus
-          on affordability, We offers innovative home automation solutions
-          that are both cost-effective and easy to use. Our systems are
-          designed for seamless connectivity, allowing users to effortlessly
-          control and monitor their homes. We provides a range of customizable 
-          options, including 2-switch, 4-switch, and 8-switch setups, catering to
-          different needs and home sizes. Guided by the motto "Be smart, live smart,
-          " Zyre is dedicated to creating a smarter, more connected future for India,
-          making advanced home automation simple and affordable for all.
+          connectivity.Zyre Home Automation is a dynamic startup committed to
+          making smart living accessible to everyone. With a strong focus on
+          affordability, We offers innovative home automation solutions that are
+          both cost-effective and easy to use. Our systems are designed for
+          seamless connectivity, allowing users to effortlessly control and
+          monitor their homes. We provides a range of customizable options,
+          including 2-switch, 4-switch, and 8-switch setups, catering to
+          different needs and home sizes. Guided by the motto "Be smart, live
+          smart, " Zyre is dedicated to creating a smarter, more connected
+          future for India, making advanced home automation simple and
+          affordable for all.
         </p>
         <button variant="outline" class="learn">
           <a href="./product.html" class="lt" style="color: black"
@@ -171,11 +171,21 @@
                 <p class="sol_title">Home Automation</p>
               </div>
               <ul class="sol_I_IV o_l">
-                <a href="/solutions.html"> <li class="lst_txt">Light control</li></a>
-                <a href="/solutions.html"><li class="lst_txt">HVAC control</li></a>
-                <a href="/solutions.html"><li class="lst_txt">Voice control</li></a>
-                <a href="/solutions.html"><li class="lst_txt">Mobile Connectivity</li></a>
-                <a href="/solutions.html"><li class="lst_txt">Kitchen Appliances</li></a>
+                <a href="/solutions.html">
+                  <li class="lst_txt">Light control</li></a
+                >
+                <a href="/solutions.html"
+                  ><li class="lst_txt">HVAC control</li></a
+                >
+                <a href="/solutions.html"
+                  ><li class="lst_txt">Voice control</li></a
+                >
+                <a href="/solutions.html"
+                  ><li class="lst_txt">Mobile Connectivity</li></a
+                >
+                <a href="/solutions.html"
+                  ><li class="lst_txt">Kitchen Appliances</li></a
+                >
               </ul>
             </section>
             <section class="sol_I_I_I">
@@ -202,7 +212,7 @@
             </ul>
           </section>
           <img src="./public/line.svg" alt="" style="width: 95%" />
-          <section class="sol_I_I_I">
+          <section class="sol_I_I_I indus">
             <div>
               <p class="sol_title">Industries</p>
             </div>
@@ -265,24 +275,22 @@
         </div>
       </div>
 
-      <div ref="{bottomRef}">
+      <div id="feed">
         <div class="sol_VI" data-aos="fade-up" data-aos-duration="1000">
           <div class="feedback">
             <div>
-              <p class="title_txt">
-                For Enquiry
-              </p>
+              <p class="title_txt">For Enquiry</p>
               <div style="display: flex; flex-direction: column; gap: 2rem">
-                <p class="text-white" style="color: white">
+                <p class="text-white feedtext" style="color: white">
                   Send a mail to
-                  <span class="text-[#ffffff99] underline">
+                  <span class="text-[#ffffff99] underline feedtext">
                     zyrehomeautomation@gmail.com
                   </span>
                 </p>
-                <p class="text-white" style="color: white">
+                <p class="text-white feedtext" style="color: white">
                   Call
                   <span
-                    class="text-[#ffffff99] underline"
+                    class="text-[#ffffff99] underline feedtext"
                     style="color: #ffffff99; text-decoration: underline"
                   >
                     +91 8525928155
@@ -291,57 +299,106 @@
                 </p>
               </div>
             </div>
-            <div class="feedbck">
-              <section style="display: flex; gap: 1rem">
-                <input
-                  type="text"
-                  placeholder="Name"
-                  style="width: 300px; padding: 0.5rem; border-radius: 5px"
-                />
-                <input
-                  type="email"
-                  placeholder="Email"
-                  style="width: 300px; padding: 0.5rem; border-radius: 5px"
-                />
-              </section>
-              <section style="display: flex; gap: 1rem">
-                <input
-                  type="tel"
-                  placeholder="Telephone"
-                  style="width: 300px; padding: 0.5rem; border-radius: 5px"
-                />
-                <input
-                  type="text"
-                  placeholder="City"
-                  style="width: 300px; padding: 0.5rem; border-radius: 5px"
-                />
-              </section>
-              <textarea
-                id="myTextarea"
-                rows="4"
-                cols="50"
-                placeholder="Type your text here..."
-                style="border-radius: 5px"
-              ></textarea>
-              <button
-                type="submit"
-                variant="outline"
-                class="w-fit flex"
-                style="
-                  background: none;
-                  border-radius: 5px;
-                  border: 0;
-                  background-color: white;
-                  color: black;
-                  font-weight: 500;
-                  width: fit-content;
-                  padding: 0.5rem 1rem;
-                "
+              <!-- <form
+                action="https://formspree.io/f/xdknwkpb"
+                method="POST"
+                enctype="multipart/form-data"
               >
-                Submit
-              </button>
-              
-            </div>
+                <section style="display: flex; gap: 1rem">
+                  <input type="text" class="input" name="text" placeholder="Name" />
+                  <input type="email" class="input" name="text"placeholder="Email" />
+                </section>
+                <section style="display: flex; gap: 1rem">
+                  <input type="tel" class="input" name="tel" placeholder="Telephone" />
+                  <input type="text" class="input"name="text" placeholder="City" />
+                </section>
+                <textarea
+                  id="myTextarea"
+                  rows="4"
+                  cols="50"
+                  placeholder="Type your text here..."
+                  style="border-radius: 5px"
+                ></textarea>
+                <button
+                  type="submit"
+                  variant="outline"
+                  class="w-fit flex"
+                  style="
+                    background: none;
+                    border-radius: 5px;
+                    border: 0;
+                    background-color: white;
+                    color: black;
+                    font-weight: 500;
+                    width: fit-content;
+                    padding: 0.5rem 1rem;
+                  "
+                >
+                  Submit
+                </button>
+              </form> -->
+              <form action="https://formspree.io/f/xdknwkpb" method="POST">
+                <div class="feedbck">
+                  <div class="flex">
+                    <label for="name" class="input"></label><br />
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      id="name"
+                      name="name"
+                      class="input"
+                      required
+                    /><br /><br />
+
+                    <label for="email" class="input"></label><br />
+                    <input
+                      type="email"
+                      class="input"
+                      placeholder="Email"
+                      id="email"
+                      name="email"
+                      required
+                    /><br /><br />
+                  </div>
+                  <div class="flex">
+                    <label for="tele" class="input"></label><br />
+                    <input
+                      type="tel"
+                      class="input"
+                      placeholder="Phone Number"
+                      id="tele"
+                      name="tele"
+                      required
+                    /><br /><br />
+                    <label for="city" class="input"></label><br />
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="City"
+                      id="city"
+                      name="city"
+                      required
+                    /><br /><br />
+                  </div>
+                  <div>
+                    <label for="message"></label><br />
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="5"
+                      class="input"
+                      required
+                    ></textarea
+                    ><br /><br />
+                  </div>
+
+                  <input
+                    type="submit"
+                    style="padding: 0.5rem 1rem; border-radius: 9px"
+                    value="Send"
+                  />
+                </div>
+              </form>
           </div>
           <!-- {/* Inputs */} -->
         </div>
@@ -354,7 +411,7 @@
           <section class="footer_I">
             <section class="feedbck">
               <div>
-                <img src="./public/new_logo.png" alt="" />
+                <img src="./public/new_logo.png" alt="" class="foot_img" />
               </div>
               <div class="feedbck_I">
                 <span class="feedbck_title">Follow us on</span>
@@ -419,7 +476,7 @@
                   <li class="points">Mobile Connectivity</li>
                 </ul>
               </div>
-              <div>
+              <div class="hide">
                 <p style="color: white; padding-bottom: 0.5rem">Industries</p>
                 <ul class="sol_I_IV">
                   <li class="points">Motors</li>
@@ -429,7 +486,7 @@
               </div>
             </section>
             <!-- Fourth -->
-            <section class="footer_III">
+            <section class="footer_III hide">
               <span class="feedbck_title" style="padding-bottom: 0.5rem"
                 >Stores and Malls</span
               >
@@ -447,12 +504,9 @@
               class="w-[90%] pl-[8rem]"
               style="width: 90%; padding-left: 8rem"
             />
-            <div
-              class="flex pt-[1rem] pl-[8rem]"
-              style="display: flex; padding-top: 1rem; padding-left: 8rem"
-            >
-              <div class="flex gap-[6rem]" style="display: flex; gap: 6rem">
-                <span class="text">
+            <div class="footer_b" style="">
+              <div class="infs" style="">
+                <span class="text hide">
                   Developed by Jayramana S and Vigneshwaran R
                 </span>
                 <span class="text">
@@ -460,10 +514,7 @@
                   reserved
                 </span>
               </div>
-              <div
-                class="pl-[8rem] flex gap-[.5rem]"
-                style="display: flex; padding-left: 8rem; gap: 0.5rem"
-              >
+              <div class="tp">
                 <a
                   href="./terms.html"
                   rel="external nofollow noopener"
@@ -499,9 +550,10 @@
       document.getElementById("changeProps").addEventListener("click", () => {
         if (i < switches.length - 1) {
           i += 1;
-        } else {
+        } else if (i === switches.length - 1) {
           i = 0;
         }
+        console.log(i);
         updateSwitchText();
       });
 
